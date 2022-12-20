@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Controls from './components/Controls';
+import ScoreComponent from './components/ScoreComponent';
+import './styles/App.scss';
+import {DataProvider} from './Data.Context';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataProvider>
+          <section className='position-relative'><ScoreComponent/></section>
+          <section><Controls/></section>
+      </DataProvider>
     </div>
   );
 }

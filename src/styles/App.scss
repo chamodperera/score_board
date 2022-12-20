@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap');
+
+*{
+  font-family: 'Podkova', serif;
+  color: black;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  height: 100vh;
+
+  section{
+    border: .1px solid;
+   }
+}
